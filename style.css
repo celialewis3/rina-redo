@@ -1,0 +1,100 @@
+/* layout */
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.15rem;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.c-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.new-album h2 {
+    font-size: 4rem;
+    padding: .8em;
+}
+
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .c-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+/* button */
+
+.button {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid white;
+    margin-bottom: 2em;
+}
+
+/* typography */
+
+
+/* img styling */
+
+
+.main-img {
+ margin: 1em 0;   
+}
+
+.album {
+    margin: 1em 0;
+}
+
+
+/* nav */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav-li {
+    margin: 0 1em;
+    font-size: 1.2rem;
+}
