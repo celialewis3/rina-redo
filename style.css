@@ -18,6 +18,10 @@ h2 {
     font-weight: 500;
 }
 
+.heading {
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     margin: 0;
@@ -25,7 +29,7 @@ img {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -45,18 +49,14 @@ img {
     padding: .8em;
 }
 
+.merch {
+    margin: 2em 0;
+}
 
-@media (min-width: 800px) {
-    .container {
-        max-width: 70%;
-    }
-
-    .c-flex {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
+#xs {
+    font-size: 4rem;
+    padding: .8em;
+    margin-bottom: -1em;
 }
 
 /* button */
@@ -65,8 +65,46 @@ img {
     text-align: center;
     padding: 1em;
     border: 1px solid white;
-    margin-bottom: 2em;
+    margin: 1em 1em;
 }
+
+/* screen size */
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .heading {
+        text-align: left;
+    }
+
+    .c-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .merch-flex {
+        justify-content: center;
+    }
+
+    .merch img {
+        max-width: 60%;
+    }
+
+    #xs {
+        font-size: 5rem;
+    }
+
+    .button {
+        margin: 0;
+        margin-bottom: 2em;
+    }
+}
+
+
 
 /* typography */
 
@@ -97,4 +135,20 @@ img {
 .nav-li {
     margin: 0 1em;
     font-size: 1.2rem;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+/* links */
+
+a,
+a:visited {
+    text-decoration: none;
+    color:inherit;
+}
+
+a:focus {
+    color: beige;
 }
