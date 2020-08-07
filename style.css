@@ -20,6 +20,7 @@ h2 {
 
 .heading {
     text-align: center;
+    font-size: 4rem;
 }
 
 img {
@@ -44,19 +45,6 @@ img {
     text-align: center;
 }
 
-.new-album h2 {
-    font-size: 4rem;
-}
-
-.merch {
-    margin: 2em 0;
-}
-
-#xs {
-    font-size: 4rem;
-    padding: .8em;
-    margin-bottom: -1em;
-}
 
 /* button */
 
@@ -67,45 +55,14 @@ img {
     margin: 1em 1em;
 }
 
-/* screen size */
-
-@media (min-width: 800px) {
-    .container {
-        max-width: 70%;
-    }
-
-    .heading {
-        text-align: left;
-    }
-
-    .c-flex {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
-    .merch-flex {
-        justify-content: center;
-    }
-
-    .merch img {
-        max-width: 60%;
-    }
-
-    #xs {
-        font-size: 5rem;
-    }
-
-    .button {
-        margin: 0;
-        margin-bottom: 2em;
-    }
-}
 
 
 
 /* typography */
+
+#xs {
+    margin: .6em 0;
+}
 
 
 /* img styling */
@@ -115,9 +72,71 @@ img {
  margin: 1em 0;   
 }
 
-.album {
-    margin: 1em 0;
+
+/* screen size */
+
+.merch-img {
+    order: 1;
 }
+
+.merch-h2 {
+    order: 0;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .heading {
+        text-align: left;
+        padding: .5em;
+    }
+
+    .c-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .new-album {
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    #xs {
+        margin: 0;
+    }
+
+    /* merch */
+
+    .merch {
+        margin-bottom: 1em;
+    }
+
+    /* button */
+
+    .merch-img {
+        order: 0;
+        width: 25%;
+    }
+    
+    .merch-h2 {
+        order: 1;
+    }
+
+    .button {
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    
+    .btn-sm {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
 
 
 /* nav */
